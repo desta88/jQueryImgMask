@@ -25,13 +25,27 @@ Usage
 
 2.	Initialize plugin
     ```
-	$('#myCanvas').imgMask({
-		type: 'image', //Type has attribute image or pattern
-		objMask: 'assets/images/mask.jpg', //It would be base masking object
-		source: 'assets/images/source1.png', //Source file into mask, NOTE: it must be transparent
+	$(document).ready(function(){
+		$('#myCanvas').imgMask({
+			type: 'image',	//Type has attribute image or pattern
+			objMask: 'assets/images/mask.jpg',	//It would be base masking object
+			source: 'assets/images/source1.png',	//Source file into mask, NOTE: it must be transparent
+			width: 100, 	//Canvas width
+			height: 100 	//Canvas height
+		});
+	});
+	```
+	
+3.	Call method drawImage for multiple images
+	```
+	var param = $('#myCanvas2').imgMask({
+    	type: 'image',
+		objMask: 'assets/images/mask.jpg',
+		source: 'assets/images/source3.png',
 		width: 100,
 		height: 100
 	});
+	param.call_drawImage('image', 'myCanvas2', 'assets/images/source1.png', 100, 100);
 	```
 
 
