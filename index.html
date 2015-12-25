@@ -1,0 +1,85 @@
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>jQuery ImgMask</title>
+</head>
+<body>
+<h3>Object Mask (Object Base for Masking) NOTE : for pattern type object it must transparent</h3>
+<img src="assets/images/mask.jpg"><br><br>
+
+<h3>Example 1 (Simple Image Masking)</h3>
+<div id="myCanvas1"></div><br><br>
+
+<h3>Example 2 (Multiple Image Masking)</h3>
+<div id="myCanvas2"></div>
+<br><button id="btnChange1">Red</button><button id="btnChange2">Green</button><button id="btnChange3">Blue</button><br><br>
+
+<h3>Example 3 (Simple Pattern Masking)</h3>
+<div id="myCanvas3"></div><br><br>
+
+<h3>Example 4 (Multiple Pattern Masking)</h3>
+<div id="myCanvas4"></div>
+<br><button id="btnChanges1">Pattern 1</button><button id="btnChanges2">Pattern 2</button><br><br>
+    
+<!-- JavaScripts -->
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.imgMask.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	/* Example 1 (Simple Image Masking) */
+	$('#myCanvas1').imgMask({
+		type: 'image',
+		objMask: 'assets/images/mask.jpg', //It would be base masking object
+		source: 'assets/images/source1.png', //Source file into mask NOTE: it must transparet
+		width: 100,
+		height: 100
+	});
+	
+	/* Example 2 (Multiple Image  Masking) */
+	var clk = $('#myCanvas2').imgMask({
+    	type: 'image',
+		objMask: 'assets/images/mask.jpg', //It would be base masking object
+		source: 'assets/images/source3.png', //Source file into mask NOTE: it must transparet
+		width: 100,
+		height: 100
+	});
+	$('#btnChange1').click(function(){
+		clk.call_drawImage('image', 'myCanvas2', 'assets/images/source1.png', 100, 100);
+	});
+	$('#btnChange2').click(function(){
+		clk.call_drawImage('image', 'myCanvas2', 'assets/images/source2.png', 100, 100);
+	});
+	$('#btnChange3').click(function(){
+		clk.call_drawImage('image', 'myCanvas2', 'assets/images/source3.png', 100, 100);
+	});
+	
+	/* Example 3 (Simple Pattern Masking) */
+	$('#myCanvas3').imgMask({
+		type: 'pattern',
+		objMask: 'assets/images/mask.png', //Source file object mask NOTE: it must transparet (It's just for pattern type) 
+		source: 'assets/images/pattern1.jpg',
+		width: 100,
+		height: 100
+	});
+	
+	/* Example 4 (Multiple Pattern Masking) */
+	$('#myCanvas4').imgMask({
+		type: 'pattern',
+		objMask: 'assets/images/mask.png', //Source file object mask NOTE: it must transparet (It's just for pattern type) 
+		source: 'assets/images/pattern1.jpg',
+		width: 100,
+		height: 100
+	});
+	$('#btnChanges1').click(function(){
+		clk.call_drawImage('pattern', 'myCanvas4', 'assets/images/pattern1.jpg', 100, 100);
+	});
+	$('#btnChanges2').click(function(){
+		clk.call_drawImage('pattern', 'myCanvas4', 'assets/images/pattern2.jpg', 100, 100);
+	});
+
+});
+</script>
+     
+</body>
+</html>
