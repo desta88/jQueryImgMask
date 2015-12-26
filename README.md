@@ -38,14 +38,16 @@ Usage
 	
 3.	Call method drawImage for multiple images
 	```
-	var param = $('#myCanvas2').imgMask({
-    	type: 'image',
-		objMask: 'assets/images/mask.jpg',
-		source: 'assets/images/source3.png',
-		width: 100,
-		height: 100
+	$(document).ready(function(){
+		var param = $('#myCanvas2').imgMask({
+    			type: 'image',
+			objMask: 'assets/images/mask.jpg',
+			source: 'assets/images/source3.png',
+			width: 100,
+			height: 100
+		});
+		param.call_drawImage('image', 'myCanvas2', 'assets/images/source1.png', 100, 100);
 	});
-	param.call_drawImage('image', 'myCanvas2', 'assets/images/source1.png', 100, 100);
 	```
 
 
