@@ -3,7 +3,7 @@
 
 jQuery Plugin for masking image using canvas (Support for multiple images)
 
-This is a jQuery plugin for allow add your image / pattern masking to your images.
+This is a jQuery plugin for add your image / pattern masking to your images.
 
 
 Installation
