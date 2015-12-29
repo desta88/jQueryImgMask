@@ -55,6 +55,9 @@ Demo
 ------------
 Full demo example [here](http://api.mdesain.com/jQueryImgMask/)
 
+License
+------------
+License : [MIT License](http://creativecommons.org/licenses/by/3.0/)
 
 Authors
 ------------
