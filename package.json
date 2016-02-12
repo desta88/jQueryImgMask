@@ -1,0 +1,22 @@
+{
+  "name": "jqueryimgmask",
+  "version": "0.0.1",
+  "description": "Plguin jQuery for masking image",
+  "main": "index.js",
+  "scripts": {
+    "test": "package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/desta88/jQueryImgMask.git"
+  },
+  "keywords": [
+    "jquery-plugin"
+  ],
+  "author": "@desta",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/desta88/jQueryImgMask/issues"
+  },
+  "homepage": "https://github.com/desta88/jQueryImgMask#readme"
+}
