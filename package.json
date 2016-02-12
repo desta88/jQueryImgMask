@@ -11,7 +11,8 @@
     "jquery-image-mask",
     "jquery-canvas",
     "image-mask",
-    "image-masking"
+    "image-masking",
+	"image-manipulation"
   ],
   "author": {
     "name": "Andhika Desta Permana",
