@@ -53,7 +53,7 @@ Usage
 
 Demo
 ------------
-Full demo example [here](http://api.mdesain.com/jQueryImgMask/)
+Full demo example [here](https://api.mdcreative.id/jQueryImgMask/)
 
 License
 ------------
@@ -61,4 +61,4 @@ License : [MIT License](http://opensource.org/licenses/mit-license.html)
 
 Authors
 ------------
-Official Authors [@desta](http://www.mdesain.com/)
+Official Authors [@desta](https://mdcreative.id/)
